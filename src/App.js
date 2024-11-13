@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Album from "./muisc-player/Album";
+import Header from "./muisc-player/Header";
+import Player from "./muisc-player/Player";
+import { useState } from "react";
 function App() {
+  const [song, setSong] = useState("main-poster.mp3");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />;
+      <Album setSong={(updatedSong) => setSong(updatedSong)} />;
+      <Player song={song} />
+    </>
   );
 }
 

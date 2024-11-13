@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  font-size: 3rem;
+  color: white;
+}
+
+.poster {
+  width: 100%;
+}
+
+.main {
+  max-width: 75rem;
+  margin: 6rem auto;
+
+}
+
+.song-item {
+  padding: 1rem 1rem 0;
+}
+
+.song-item .play-icon {
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+}
